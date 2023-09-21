@@ -16,8 +16,8 @@
 
 // どのサイトでも使えるようにした。
 #pc-right-contactArea{
-	background: $site-color01;
-	border: 1px solid $site-color01;
+	background: $site-btn-color;
+	border: 1px solid $site-btn-color;
     position: fixed;
     top: 33%;
     right: 2%;
@@ -32,7 +32,7 @@
 svg{
     &#rightBtn_top{
         .cls-1{
-            fill: $site-color01;
+            fill: $site-btn-color;
         }
     }
     #rightBtn_btm{

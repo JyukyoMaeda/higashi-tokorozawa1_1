@@ -18,18 +18,112 @@
 				background-position: center;
 				background-size: cover;
 				background-repeat: no-repeat;
-				&.-parallax_bg{//ここに背景を指定する。
-					background-image: url(../images/bg/header_bg_s.jpg);
-					@include mq(tb){
-						background-image: url(../images/bg/header_bg.jpg);
-					}
+				&.-parallax_bg01{//ここに背景を指定する。
+					background-image: url(../images/bg/top-content03.jpg);
 				}
 			}
 		}
 		.l-contentsBox{// コンテンツ要素
 			width: 100%;
 			position: absolute;
-			
+
+			// TOP > f-view
+			&.-f-view{
+				p{
+					margin-right: 50px;
+                	margin-left: auto;
+					@include mq(tb){
+						width: 70%;
+					}
+					@include mq(tb-pc1000){
+						width: 50%;
+					}
+				}
+			}
+			// TOP > 街並・区画
+			&.-top-content_btn{
+				top: 87%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 80%;
+				@include mq(tb){
+					top: 68%;
+					left: 26.7%;
+					width: 20%;
+				}
+			}
+			// TOP > コンタクト
+			&.-top-contactBtn{
+				top: 22.4%;
+				left: 85%;
+				transform: translate(-50%, -50%);
+				width: 20%;
+				@include mq(tb){
+					top: 17%;
+    				left: 62%;
+					width: auto;
+				}
+			}
+			&.-top-specBtn{
+				top: 47.4%;
+				left: 85%;
+				transform: translate(-50%, -50%);
+				width: 20%;
+				@include mq(tb){
+					top: 41%;
+    				left: 23%;
+					transform: translate(-50%,-50%);
+					width: auto;
+				}
+			}
+			&.-top-jyukyoBtn{
+				top: 73.1%;
+				left: 85%;
+				transform: translate(-50%, -50%);
+				width: 20%;
+				@include mq(tb){
+					top: 65%;
+    				left: 62%;
+					transform: translate(-50%,-50%);
+					width: auto;
+				}
+			}
+			&.-top-inforBtn{
+				top: 98%;
+				left: 85%;
+				transform: translate(-50%, -50%);
+				width: 20%;
+				@include mq(tb){
+					top: 88%;
+    				left: 23%;
+					transform: translate(-50%,-50%);
+					width: auto;
+				}
+			}
+			// TOP > 口コミエリア
+			&.-top-kuchikomi{
+				top: 71%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 65%;
+				@include mq(tb){
+					width: 20%;
+				}
+			}
+			&.-top-shintokotosawa{
+				top: 92%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 75%;
+				@include mq(tb){
+					top: 89%;
+					width: 25%;
+				}
+			}
+
+
+
+
 			//サイト右側中段に表示 （PCのみ）
 			&.-right-topBtn{
 				top: 2.5%;

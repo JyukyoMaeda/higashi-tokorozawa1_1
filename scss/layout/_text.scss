@@ -44,6 +44,22 @@
         }
     }
 
+
+    // 矢印
+    &.-arrow{
+        position: relative;
+        &::after{
+            content:">";
+            position: absolute;
+            top: 50%;
+            right: -50%;
+            transform: translateY(-50%);
+        }
+    }
+
+
+
+
         // 大きさ
         &.-size10{
             font-size: 12px;

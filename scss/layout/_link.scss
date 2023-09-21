@@ -43,6 +43,88 @@
             }
         }
     }
+    &.-p04{
+        transition: all .3s;
+        @include mq(tb){
+            .-cover{
+                .-cover-btmImg,
+                .-cover-topImg,
+                .-cover-boxText,
+                .-cover-boxBtn{
+                    transition: all .5s;
+                }
+                &:hover{
+                    .-cover-topImg{
+                        opacity: 0;
+                        transition-duration: 0.2s;
+                        // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+                    }
+                    .-cover-btmImg{
+                        transform: scale(1.1);
+                    }
+                    .-cover-boxText,
+                    .-top-boxBtn{
+                        filter: drop-shadow(3px 1.5px 2.5px rgba(0,0,0,0.6));
+                    }
+                }
+            }
+        }
+        &:hover{
+            transform: scale(1.02);
+        }
+        .-cover{
+            opacity: 1;
+            transition-duration: 0.5s;
+            overflow: hidden;
+            @include mq(tb){
+                transition: all 0.5s ease-in-out;
+            }
+        }
+
+        &_v02{
+            @include mq(tb){
+                .-cover{
+                    .-cover-topImg,
+                    .-cover-boxText,
+                    .-cover-boxBtn{
+                        opacity: 0;
+                    }
+                    
+
+                    .-cover-btmImg,
+                    .-cover-topImg,
+                    .-cover-boxText,
+                    .-cover-boxBtn{
+                        transition: all .5s;
+                    }
+                    &:hover{
+                        .-cover-topImg,
+                        .-cover-boxText,
+                        .-cover-boxBtn{
+                            opacity: 1;
+                            transition-duration: 0.2s;
+                            // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+                        }
+                        .-cover-btmImg{
+                            transform: scale(1.1);
+                        }
+                        .-cover-boxText,
+                        .-top-boxBtn{
+                            filter: drop-shadow(3px 1.5px 2.5px rgba(0,0,0,0.6));
+                        }
+                    }
+                }
+            }
+            .-cover{
+                opacity: 1;
+                transition-duration: 0.5s;
+                overflow: hidden;
+                @include mq(tb){
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        }
+    }
 
 
     &.-contact{
@@ -217,21 +299,26 @@
 }
 
 .l-linkText{
-    font-size: 10px;
-    color: $main-color--b;
-    margin-right: -3%;
-    transition: all .5s;
-    @include mq(tb){
-        font-size: 12px;
-        margin-right: 2%;
-    }
-    &:hover{
-        color: $main-color--gray;
-    }
-    &.-p02{
-        margin-right: -2%;
-        @include mq(tb){
-            margin-right: 2%;
+    color: black;
+    &.-p01{
+        position: relative;
+        display: block;
+        transition: all .5s;
+        &::after{
+            content: "";
+            width: 145%;
+            height: 1px;
+            background: initial;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all .5s;
+        }
+        &:hover{
+            &::after{
+                background: #707070;
+            }
+            transform: scale(1.1);
         }
     }
 }
