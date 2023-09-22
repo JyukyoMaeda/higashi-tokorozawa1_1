@@ -184,16 +184,7 @@ img {
 }
 
 .l-mgt_10 {
-  margin-top: 5vh !important;
-}
-@media screen and (min-width: 767px) {
-  .l-mgt_10 {
-    margin-top: 10vh !important;
-  }
-}
-
-.l-mgt_10 {
-  margin-top: 5vh !important;
+  margin-top: 0vh !important;
 }
 @media screen and (min-width: 767px) {
   .l-mgt_10 {
@@ -585,7 +576,7 @@ img {
   }
 }
 .l-contents.-img-bg .l-contentsBox.-top-kuchikomi {
-  top: 71%;
+  top: 68%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 65%;

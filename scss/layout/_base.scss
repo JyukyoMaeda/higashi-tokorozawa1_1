@@ -126,13 +126,7 @@ img{
 	}
 }
 .l-mgt_10{
-	margin-top: 5vh !important;
-	@include mq(tb){
-		margin-top: 10vh !important;
-	}
-}
-.l-mgt_10{
-	margin-top: 5vh !important;
+	margin-top: 0vh !important;
 	@include mq(tb){
 		margin-top: 10vh !important;
 	}
