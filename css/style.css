@@ -2667,6 +2667,12 @@ img {
 .l-text.-green {
   text-shadow: 1px 1px 10px rgb(236, 236, 236);
 }
+.l-text.-beige {
+  color: #a59363;
+}
+.l-text.-beige a {
+  color: #a59363;
+}
 .l-text.-pink {
   text-shadow: 1px 1px 10px rgb(238, 238, 238);
 }

@@ -549,6 +549,12 @@
     &.-green{
         text-shadow: 1px 1px 10px rgb(236, 236, 236);
     }
+    &.-beige{
+        color: $main-color--beige;
+        a{
+            color: $main-color--beige;
+        }
+    }
     &.-pink{
         // color: $text-pink;
         text-shadow: 1px 1px 10px rgb(238, 238, 238);
