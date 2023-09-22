@@ -58,13 +58,17 @@
 
 .inline_modal {
     display:none;
-    .modalItem{
-        img{
-            @include mq(tb){
-                // width: 75%;
-            }
+    width: 80% !important;
+}
+.danran-Item{
+
+    img{
+        margin: auto;
+        @include mq(tb){
+            width: 100%;
         }
     }
+
 }
 #inline_content{
     text-align: center;
@@ -118,3 +122,4 @@
         transform: translate(-50%,-50%) rotate(-45deg);
     }
 }
+

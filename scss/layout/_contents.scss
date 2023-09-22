@@ -121,6 +121,35 @@
 				}
 			}
 
+			// コンセプト　>　スライダー
+			&.-sliderBox{
+				top: 58%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				@include mq(tb){
+					top: 50%;
+				}
+			}
+			&.-owners-voice{
+				top: 57%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				@include mq(tb){
+					top: 50%;
+				}
+			}
+			&.-katarog_btn{
+				top: 88.7%;
+				left: 74%;
+				transform: translate(-50%, -50%);
+				width: 25%;
+				@include mq(tb){
+					top: 80%;
+					left: 53.5%;
+					width: 15%;
+				}
+			}
+
 
 
 
