@@ -1,6 +1,26 @@
 .l-contents{
 	width: 100%;
 	height: auto;
+	&.-instaArea{
+		position: relative;
+		padding: 0 10px;
+		&::after{
+			content:"";
+			background-image: url(../images/SVG/pickup.svg);
+			background-repeat: no-repeat;
+			width: 120px;
+			height: 120px;
+			position: absolute;
+			top: -4%;
+			left: 68%;
+			@include mq(tb){
+				width: 150px;
+				height: 150px;
+				top: -4%;
+				left: 75%;
+			}
+		}
+	}
 	&.-img{// 背景画像のみ
 		width: 100%;
 		height: auto;
@@ -20,6 +40,9 @@
 				background-repeat: no-repeat;
 				&.-parallax_bg01{//ここに背景を指定する。
 					background-image: url(../images/bg/top-content03.jpg);
+				}
+				&.-parallax_bg02{//ここに背景を指定する。
+					background-image: url(../images/bg/build-content01.jpg);
 				}
 			}
 		}
@@ -55,10 +78,15 @@
 			// TOP > コンタクト
 			&.-top-contactBtn{
 				top: 22.4%;
-				left: 85%;
+				left: 87%;
 				transform: translate(-50%, -50%);
 				width: 20%;
 				@include mq(tb){
+					top: 17%;
+    				left: 62.5%;
+					width: auto;
+				}
+				@include mq(tb-pc1600){
 					top: 17%;
     				left: 62%;
 					width: auto;
@@ -66,43 +94,55 @@
 			}
 			&.-top-specBtn{
 				top: 47.4%;
-				left: 85%;
+				left: 87%;
 				transform: translate(-50%, -50%);
 				width: 20%;
 				@include mq(tb){
 					top: 41%;
+    				left: 23.5%;
+					width: auto;
+				}
+				@include mq(tb-pc1600){
+					top: 41%;
     				left: 23%;
-					transform: translate(-50%,-50%);
 					width: auto;
 				}
 			}
 			&.-top-jyukyoBtn{
 				top: 73.1%;
-				left: 85%;
+				left: 87%;
 				transform: translate(-50%, -50%);
 				width: 20%;
 				@include mq(tb){
 					top: 65%;
+    				left: 62.5%;
+					width: auto;
+				}
+				@include mq(tb-pc1600){
+					top: 65%;
     				left: 62%;
-					transform: translate(-50%,-50%);
 					width: auto;
 				}
 			}
 			&.-top-inforBtn{
 				top: 98%;
-				left: 85%;
+				left: 87%;
 				transform: translate(-50%, -50%);
 				width: 20%;
 				@include mq(tb){
 					top: 88%;
+    				left: 23.5%;
+					width: auto;
+				}
+				@include mq(tb-pc1600){
+					top: 88%;
     				left: 23%;
-					transform: translate(-50%,-50%);
 					width: auto;
 				}
 			}
 			// TOP > 口コミエリア
 			&.-top-kuchikomi{
-				top: 68%;
+				top: 70%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				width: 65%;

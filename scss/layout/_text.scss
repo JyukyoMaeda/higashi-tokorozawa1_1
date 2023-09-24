@@ -52,8 +52,11 @@
             content:">";
             position: absolute;
             top: 50%;
-            right: -50%;
+            right: 10%;
             transform: translateY(-50%);
+            @include mq(tb){
+                right: -50%;
+            }
         }
     }
 

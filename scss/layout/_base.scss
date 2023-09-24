@@ -91,10 +91,24 @@ img{
 	margin: auto;
 }
 .w850{
-	width: 95%;
-	max-width: 850px;
+	width: 85% !important;
 	margin: auto;
+	@include mq(tb){
+		width: 95% !important;
+		max-width: 850px;
+	}
+	&.-s80{
+		@include mq(sp){
+			width: 80% !important;
+		}
+	}
+	&.-s100{
+		@include mq(sp){
+			width: 100% !important;
+		}
+	}
 }
+
 .w90-s{
 	@include mq(sp){
 		width: 90% !important;
@@ -276,6 +290,7 @@ img{
 	@include mq(tb){
 		padding-bottom: 5vh !important;
 	}
+	
 }
 .l-pdb_10{
 	padding-bottom : 5vh !important;
