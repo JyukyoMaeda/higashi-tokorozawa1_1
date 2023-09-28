@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>master </title>
+    <title>グランシア東所沢 | 建築条件付売地 全7棟</title>
     <!-- デプロイ前に確認・サンプル -->
     <meta name="keywords" content="所沢市,東所沢,西武池袋線,所沢駅,東所沢駅,小手指駅,住協">
     <meta name="description" content="これからの街『東所沢』駅チカで、自由自在な家づくり。所沢市東所沢1丁目 建築条件付売地 全6棟 JR武蔵野線 東所沢駅まで徒歩8分">
@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/query.colorbox-min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/aos.js"></script>
+    <!-- <script src="js/aos.js"></script> -->
     <script src="js/menu.js"></script>
     <script src="js/pagetop.js"></script>
 
@@ -335,7 +335,7 @@
     </footer>
 
     <script>
-        AOS.init();
+        // AOS.init();
         // モーダル関係
         $(function() {
             // リンク先を表示するモーダル（iframe）
@@ -357,83 +357,6 @@
                     parent.$.fn.colorbox.close(); return false;
                 });
             });
-        });
-        // 通常スライダー用
-        $(function(){
-            $(".nomal-slider").slick({
-                autoplay: true,
-                prevArrow: '<img src="images/btn/prev-arrow.png" class="slide-arrow prev-arrow">',
-                nextArrow: '<img src="images/btn/next-arrow.png" class="slide-arrow next-arrow">',
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                responsive: [ // ブレイクポイントごとに設定を変更
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            cssEase: 'linear', // easing効果を指定
-                            // centerMode: false, //要素を中央寄せ
-                        }
-                    }
-                ]
-            });
-            $('.nomal-slider2').slick({
-                infinite: true, // 画像遅延読み込み
-                autoplay: true, // 自動再生
-                autoplaySpeed: 0, // スライドが動くスピード（ミリ秒）
-                speed: 10500,
-                cssEase: 'linear',
-                arrows: false,
-                dots: false, // カルーセル下のドット（現在の表示箇所を視覚化）
-                centerMode: true, //要素を中央寄せ
-                centerPadding:'0px', //両サイドの見えている部分のサイズ
-                slidesToShow:7, // 一度に見えているスライドの数
-                slidesToScroll:1, // スライドが切り替わる際の画像数
-                responsive: [ // ブレイクポイントごとに設定を変更
-                    {
-                        breakpoint: 1980,
-                        settings: {
-                            slidesToShow: 5,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            autoplaySpeed: 0,
-                            arrows :false,
-                            speed: 8500, // fade時の切り替えのスピード
-                            cssEase: 'linear', // easing効果を指定
-                            // centerMode: false, //要素を中央寄せ
-                        }
-                    }
-                ]
-            });
-        });
-        // サムネイルスライダー用
-        const sliderThumbnail  = new Swiper(".thumbnail", {
-            slidesPerView: 6, // サムネイルの枚数
-        });
-        const swiperMain = new Swiper(".main", {
-            loop: true,
-            pagination:{
-                el:".swiper-pagination",
-                type:"bullets",
-                clickable:"true"
-            } ,
-            thumbs: {
-                swiper: sliderThumbnail,
-            },
         });
     </script>
 </body>
