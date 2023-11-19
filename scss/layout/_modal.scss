@@ -61,14 +61,12 @@
     width: 80% !important;
 }
 .danran-Item{
-
     img{
         margin: auto;
         @include mq(tb){
             width: 100%;
         }
     }
-
 }
 #inline_content{
     text-align: center;
